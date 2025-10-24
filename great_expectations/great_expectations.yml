@@ -1,0 +1,16 @@
+# Минимальная конфигурация Great Expectations
+config_version: 3.0
+
+# Определение контекста данных
+data_context:
+  store_backend:
+    class_name: TupleFilesystemStoreBackend
+  expectations_store_name: expectations_store
+  validations_store_name: validations_store
+  evaluation_parameter_store_name: evaluation_parameter_store
+
+# Настройки подключения к данным (указываем путь к вашим данным)
+datasources:
+  default:
+    class_name: PandasDatasource
+    data_path: /Users/nadezdaivanova/Documents/GitHub/credit-scoring-model/data/processed/
