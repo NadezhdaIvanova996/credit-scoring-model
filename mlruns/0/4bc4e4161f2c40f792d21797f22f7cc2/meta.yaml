@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/nadezdaivanova/Documents/GitHub/credit-scoring-model/mlruns/0/4bc4e4161f2c40f792d21797f22f7cc2/artifacts
+end_time: 1761532650038
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4bc4e4161f2c40f792d21797f22f7cc2
+run_name: delicate-snail-242
+run_uuid: 4bc4e4161f2c40f792d21797f22f7cc2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761532638526
+status: 3
+tags: []
+user_id: nadezdaivanova

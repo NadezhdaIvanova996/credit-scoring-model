@@ -5,6 +5,7 @@ from sklearn.metrics import roc_auc_score, precision_score, recall_score, f1_sco
 import matplotlib.pyplot as plt
 import pandas as pd
 import os
+import joblib  # Добавлен импорт joblib
 
 # Загрузка данных
 data = pd.read_csv("/Users/nadezdaivanova/Documents/GitHub/credit-scoring-model/data/processed/train.csv")
@@ -49,6 +50,11 @@ with mlflow.start_run():
 
     # Сохранение модели
     mlflow.sklearn.log_model(pipeline, "model")
+    import joblib
+    model_path = "models/credit_default_model.pkl"
+    os.makedirs(os.path.dirname(model_path), exist_ok=True)  # Создаём папку, если её нет
+    joblib.dump(pipeline, model_path)  # Сохраняем модель в файл
+    mlflow.log_artifact(model_path)  # Логируем файл в MLflow
 
     # Сохранение метрик
     with open("metrics.json", "w") as f:

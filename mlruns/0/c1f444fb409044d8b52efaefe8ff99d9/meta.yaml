@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/nadezdaivanova/Documents/GitHub/credit-scoring-model/mlruns/0/c1f444fb409044d8b52efaefe8ff99d9/artifacts
+end_time: 1761532988861
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c1f444fb409044d8b52efaefe8ff99d9
+run_name: loud-bird-332
+run_uuid: c1f444fb409044d8b52efaefe8ff99d9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761532979573
+status: 3
+tags: []
+user_id: nadezdaivanova
