@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/nadezdaivanova/Documents/GitHub/credit-scoring-model/mlruns/0/ba075321d21049a88549057edc18cf20/artifacts
+end_time: 1761526876004
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ba075321d21049a88549057edc18cf20
+run_name: silent-mole-139
+run_uuid: ba075321d21049a88549057edc18cf20
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761526858243
+status: 3
+tags: []
+user_id: nadezdaivanova
