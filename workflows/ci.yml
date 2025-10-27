@@ -24,6 +24,6 @@ jobs:
           pip install -r requirements.txt
           pip install pytest dvc
       - name: Run tests
-        run: pytest tests/
+        run: PYTHONPATH=. pytest tests/
       - name: Initialize DVC
         run: dvc pull
