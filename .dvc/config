@@ -1,0 +1,4 @@
+[core]
+    remote = local
+['remote "local"']
+    url = file:////Users/nadezdaivanova/Documents/GitHub/dvc_storage
