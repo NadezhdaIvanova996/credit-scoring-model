@@ -10,3 +10,5 @@ uvicorn==0.24.0
 pydantic==2.5.0
 joblib==1.3.2
 requests
+skl2onnx
+onnxruntime
