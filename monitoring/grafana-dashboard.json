@@ -1,0 +1,44 @@
+{
+    "dashboard": {
+      "id": null,
+      "title": "Credit Scoring API Monitoring",
+      "tags": ["mlops", "credit-scoring"],
+      "timezone": "browser",
+      "panels": [
+        {
+          "title": "API Requests Rate",
+          "type": "graph",
+          "gridPos": { "x": 0, "y": 0, "w": 12, "h": 8 },
+          "targets": [
+            {
+              "expr": "rate(http_requests_total[5m])"
+            }
+          ]
+        },
+        {
+          "title": "Prediction Latency (95th percentile)",
+          "type": "graph",
+          "gridPos": { "x": 12, "y": 0, "w": 12, "h": 8 },
+          "targets": [
+            {
+              "expr": "histogram_quantile(0.95, sum(rate(prediction_latency_seconds_bucket[5m]) by (le)))"
+            }
+          ]
+        },
+        {
+          "title": "CPU Usage",
+          "type": "graph",
+          "gridPos": { "x": 0, "y": 8, "w": 24, "h": 8 },
+          "targets": [
+            {
+              "expr": "rate(container_cpu_usage_seconds_total[5m])"
+            }
+          ]
+        }
+      ]
+    },
+    "templating": {},
+    "annotations": {},
+    "refresh": "5s",
+    "version": 1
+  }
